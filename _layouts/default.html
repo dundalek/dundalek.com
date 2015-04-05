@@ -1,5 +1,5 @@
 ---
-title: Emerald | A Jekyll blog
+
 ---
 <!DOCTYPE html>
 <html>
@@ -9,8 +9,15 @@ title: Emerald | A Jekyll blog
 <body>
 	<div id="wrap">
 	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
+  	<!-- Navigation -->
+   <nav id="nav">
+       <h1>Jakub Dundalek</h1>
+       <div id="nav-list">
+           <a href="{{ site.baseurl }}">Home</a>
+           {% include navlinks.html %}
+       </div>
+   </nav>
+
     
     <!-- Icon menu -->
 	  <a href="#" id="nav-menu">
@@ -18,7 +25,9 @@ title: Emerald | A Jekyll blog
 	  </a>
 
       <!-- Header -->
-	    {% include header.html %}
+      {% if paginator.total_pages > 1 %}
+          {% include header.html %}
+      {% endif %}
 
     <!-- Main content -->
 	  <div id="container">
@@ -55,13 +64,7 @@ title: Emerald | A Jekyll blog
         {% endif %}
 
 	  </div>
-	    
-	    <!-- Footer -->
-	    {% include footer.html %}
-
-	    <!-- Script -->
-      {% include script.html %}
-
 	</div>
+    <script src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

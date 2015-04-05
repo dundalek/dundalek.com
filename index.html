@@ -1,17 +1,18 @@
 ---
-layout: default
+layout: homepage
 ---
-<!-- Posts -->
-<ul id="posts">
+<div id="intro" class="box">
+  <div class="inside" itemscope itemtype="http://schema.org/Person">
+    <img src="img/me-80.jpg" class="avatar">
+    <h1 itemprop="name">Jakub<br>Dundalek</h1>
 
-	{% for post in paginator.posts %}
+    <h2>software engineer</h2>
+    
+    <div>
+      {% include navlinks.html %}
+    </div>
 
-	  <li class="post">
-	  	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-	  	<span class="by-line">{{ post.date | date_to_string }}</span>
-	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
-	  </li>
-
-  {% endfor %}
-
-</ul>
+    <h2>Contact</h2>
+    <div>dundalek<!-- >@. -->&#64;<!-- >@. -->gmail<!-- >@. -->.<!-- >@. -->com</div>
+  </div>
+</div>

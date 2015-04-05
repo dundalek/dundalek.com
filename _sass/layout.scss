@@ -1,5 +1,7 @@
 /*- General Layout -*/
 
+$break: 800px;
+
 /* Navigation */
 
 nav {
@@ -8,7 +10,8 @@ nav {
   background-color: $main-color;
   top: 0;
   bottom: 0;
-  right:-14rem;
+  left: 0;
+  //left:-14rem;
   color: $background-color;
   opacity: 0.95;
   transition: all 0.3s ease-in;
@@ -31,32 +34,32 @@ nav {
   span {
       font-weight: 200;
     }
-}
-
-nav.menu-open {
-  transform: translateX(-14rem);
-  width: 100%;
-  @media (min-width: 940px) {
-    width: 30%;
+    
+  @media (max-width: $break) {
+    left: -14rem;
   }
 }
 
-#nav-list:after {
-  display: block;
-  content: '';
-  width: 5rem;
-  height: 1px;
-  margin: 23px auto;
-  background-color: $background-color;
+nav.menu-open {
+  width: 30%;
+  
+  @media (max-width: $break) {
+    transform: translateX(14rem);
+    width: 100%;
+  }
 }
 
 #nav-menu {
   display: block;
   position: absolute;
   top: 35px;
-  right: 25px;
+  left: 25px;
   z-index: 10;
   height: 24px;
+  
+  @media (min-width: $break) {
+    display: none;
+  }
 }
 
 /* Icon menu */
@@ -105,15 +108,24 @@ nav.menu-open {
   }
 }
 
+#wrap {
+  @media (min-width: $break) {
+    margin-top: 65px;
+  }
+}
+
 #container {
 	margin:0 auto;
-	max-width: 730px;
+	max-width: 980px;
 	padding: 0 1.5rem;
+  @media (min-width: $break) {
+    margin-left: 30%;
+  }
 }
 
 #header {
 	text-align: center;
-  padding: 24px 0;
+  // padding: 24px 0;
   position: relative;
   a {
   	text-decoration: none;
@@ -136,6 +148,13 @@ nav.menu-open {
     height: 1px;
     margin: 23px auto;
     background-color: lighten($text-color, 70%);
+  }
+}
+
+h1 {
+  @media (max-width: $break) {
+    margin: 0 50px;
+    margin-top: 7px;
   }
 }
 

@@ -13,7 +13,8 @@ body {
 p {
 	font-size: 1em; /* 16px */
 	line-height: 1.5em; /* 24px/16px */
-	margin-bottom: 1.5em; /* 24px/16px */
+	margin-top: .75em; /* 24px/16px */
+	margin-bottom: .75em;
 }
 
 h1 {
@@ -40,10 +41,7 @@ blockquote {
      -moz-border-radius: 4px;
           border-radius: 4px;
 	background-color: darken($background-color, 5%);
-	padding: 0 1.5em; /* 24px/18px */
-	p {
-		padding: 1.5em 0; /* 24px/18px */
-	}
+	padding: 1.5em; /* 24px/18px */
 }
 
 /*- Typography for big screen, based on 18px font-size -*/
@@ -53,13 +51,18 @@ blockquote {
 p {
 	font-size: 1em; /* 18px */
 	line-height: 1.3334em; /* 24px/18px */
-	margin-bottom: 1.3334em; /* 24px/18px */
+	margin-top: 0.6667em; /* 24px/18px */
+	margin-bottom: 0.6667em;
 }
 
 h1 {
 	font-size: 2.6667em; /* 48px/18px */
 	line-height: 1em; /* 48px/48px */
 	padding: 0.25em 0; /* 12px/48px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
+}
+
+nav h1 {
+	font-size: 2.2em;
 }
 
 h2 {
@@ -81,10 +84,7 @@ blockquote {
      -moz-border-radius: 4px;
           border-radius: 4px;
 	background-color: darken($background-color, 5%);
-	padding: 0 1.33334em; /* 24px/18px */
-	p {
-		padding: 1.33334em 0; /* 24px/18px */
-	}
+	padding: 1.33334em; /* 24px/18px */
 }
 
 }
