@@ -83,6 +83,17 @@ html.homepage {
     background-size: cover;
     font-size: 120%;
   }
+  
+  .homepage {
+    a {
+      padding-top: 1em;
+      height: 3em;
+    }
+    
+    h2 {
+      padding: 0.5em 0 0 0;
+    }
+  }
 }
 
 @media (min-width: 480px) {
