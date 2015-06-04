@@ -1,6 +1,7 @@
 # Site settings
 title: Entropic Blog
-description: ""
+name: Entropic Blog by Jakub Dundalek
+description: "Fixing Entropy through software"
 url: "http://dundalek.com"
 author:
   name: "Jakub Dundalek"

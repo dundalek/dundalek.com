@@ -5,6 +5,8 @@
 
 	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+	<link rel='alternate' type='application/rss+xml' title='RSS' href='/feed.xml'>
+
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic|Signika:700,300,400,600' rel='stylesheet' type='text/css'>
