@@ -12,6 +12,6 @@ Blog template Emerald released under [MIT License](http://opensource.org/license
 
 ## Notes to self
 
-- Using Jekyll 2, install with `sudo gem install jekyll -v '<3'`
+- Install dependencies with `bundle install`
 - Build with `jekyll build`
 - Dev move `jekyll serve`
