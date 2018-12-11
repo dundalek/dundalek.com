@@ -15,6 +15,10 @@ permalink: /entropic/:title
 paginate: 5
 paginate_path: /entropic/page:num/
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 # Default values
 defaults:
   -

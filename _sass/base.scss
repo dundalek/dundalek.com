@@ -43,3 +43,20 @@ a {
 		color: darken($main-color, 5%);
 	}
 }
+
+pre.highlight {
+  white-space: pre-wrap;
+  background-color: #f6f8fa;
+  margin: 0;
+  padding: 16px;
+
+  & .err {
+    background-color: transparent;
+  }
+}
+
+.highlight code,
+code.highlighter-rouge {
+  color: #555;
+  background-color: #f6f8fa;
+}
