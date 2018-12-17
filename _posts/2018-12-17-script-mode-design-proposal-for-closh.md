@@ -91,7 +91,7 @@ hello Peter
 (hello "Peter")
 ```
 
-To make scripts easier to reason about I am considering only allowing the function form in script mode. All external functions would need to be explicitly required and referred.
+To make scripts easier to reason about I am considering allowing only the function form in script mode. All external functions would need to be explicitly required and referred.
 
 ### Multi-line commands
 
