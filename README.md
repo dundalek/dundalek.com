@@ -12,6 +12,6 @@ Blog template Emerald released under [MIT License](http://opensource.org/license
 
 ## Notes to self
 
-- Install dependencies with `bundle install`
-- Build with `jekyll build`
-- Dev move `jekyll serve`
+- Install dependencies with `brew install ruby`, `bundle update --bundler`, `bundle install`
+- Build with `bundle exec jekyll build`
+- Dev move `bundle exec jekyll serve`
