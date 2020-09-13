@@ -34,18 +34,39 @@ nav {
   span {
       font-weight: 200;
     }
-    
+
   @media (max-width: $break) {
     left: -14rem;
   }
 }
 
-nav.menu-open {
-  width: 30%;
-  
-  @media (max-width: $break) {
-    transform: translateX(14rem);
-    width: 100%;
+#open-menu-toggle:checked ~ #wrap {
+  position: fixed;
+  @media (min-width: 940px) {
+    position: static;
+  }
+
+  nav {
+    width: 30%;
+
+    @media (max-width: $break) {
+      transform: translateX(14rem);
+      width: 100%;
+    }
+  }
+
+  #menu {
+    background: none;
+    &:before {
+      top: 0;
+      transform: rotate(-45deg);
+      background-color: $background-color;
+    }
+    &:after {
+      top: -4px;
+      transform: rotate(45deg);
+      background-color: $background-color;
+    }
   }
 }
 
@@ -56,10 +77,15 @@ nav.menu-open {
   left: 25px;
   z-index: 10;
   height: 24px;
-  
+  cursor: pointer;
+
   @media (min-width: $break) {
     display: none;
   }
+}
+
+#open-menu-toggle {
+  display: none;
 }
 
 /* Icon menu */
@@ -84,29 +110,9 @@ nav.menu-open {
   &:after {
     top: 4px;
   }
-  &.btn-close {
-    background: none;
-  }
-  &.btn-close:before {
-    top: 0;
-    transform: rotate(-45deg);
-    background-color: $background-color;
-  }
-  &.btn-close:after {
-    top: -4px;
-    transform: rotate(45deg);
-    background-color: $background-color;
-  }
 }
 
 /* Main content */
-
-.fixed {
-  position: fixed;
-  @media (min-width: 940px) {
-    position: static;
-  }
-}
 
 #wrap {
   @media (min-width: $break) {
