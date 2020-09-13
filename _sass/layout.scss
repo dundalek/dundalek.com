@@ -173,15 +173,6 @@ h1 {
     }
 }
 
-.post+.post:before {
-    display: block;
-    content: '';
-    width: 5rem;
-    height: 1px;
-    margin: 23px auto;
-    background-color: lighten($text-color, 70%);
-  }
-
 .by-line {
   display: block;
   color: lighten($text-color, 25%);
@@ -195,6 +186,12 @@ h1 {
     margin-bottom: 1.3334em; /* 24px/18px */
     font-weight: 200;
   }
+}
+
+.post-date {
+  color: lighten($text-color, 25%);
+  font-weight: 200;
+  margin-right: 10px;
 }
 
 img {
