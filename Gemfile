@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "<3"
+gem "jekyll", "<5"
 gem "jekyll-press"
 gem "rouge"
